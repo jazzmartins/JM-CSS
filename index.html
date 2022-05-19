@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.1.1/css/all.css" integrity="sha384-/frq1SRXYH/bSyou/HUp/hib7RVN1TawQYja658FEOodR/FQBKVqT9Ol+Oz3Olq5" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Roboto:ital,wght@0,100;0,400;1,900&family=Updock&family=Water+Brush&display=swap" rel="stylesheet">
+    
+    <title>Jéssica Martins</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div id="logo">
+            <h1>
+            Jm
+            </h1>
+        </div>
+
+        <ul>
+            <li>
+                <a target="_blank"href="https://github.com/jazzmartins"> GitHub </a>
+            </li>
+            <li>
+                <a target="_blank" href="mailto:jessica.martins.smk@gmail.com"> E-mail</a>
+            </li>
+            <li>
+                <a target="_blank" href="https://wa.me/11987654321"> WhatsApp </a>
+            </li>
+        </ul>
+    </header>
+
+    
+
+    <main>
+        <section class="container">
+            <div class="name">
+                <h1>
+                    Jéssica Martins
+                </h1>
+
+                <h5>
+                    Front-End Developer
+                </h5>
+            </div>
+
+            
+            <div onclick="displayAbout()" id="arrow">
+                <i id="animation" class="fa-solid fa-caret-down"></i>
+            </div>
+
+            <div style="display: none;" id="about">
+
+                <div class="flex">
+                    <div>
+                        <img src="imagens/FOT_1967.JPG" alt="">
+            
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                            Corrupti, dignissimos magnam rem autem delectus laboriosam assumenda recusandae al
+                            iquid vel nobis accusantium ab labore, quas mollitia ipsa ullam fugit earum libero!
+                        </p>
+                    </div>
+                
+                    <div>
+                        <img src="imagens/FOT_1977.JPG" alt="">
+            
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                            Corrupti, dignissimos magnam rem autem delectus laboriosam assumenda recusandae al
+                            iquid vel nobis accusantium ab labore, quas mollitia ipsa ullam fugit earum libero!
+                        </p>
+                    </div>
+            
+                    <div>
+                        <img src="imagens/FOT_1999.JPG" alt="">
+            
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                            Corrupti, dignissimos magnam rem autem delectus laboriosam assumenda recusandae al
+                            iquid vel nobis accusantium ab labore, quas mollitia ipsa ullam fugit earum libero!
+                        </p>
+                    </div>
+                </div> 
+           
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                    Qui doloremque fugiat, hic quis saepe reprehenderit adipisci ipsum quae
+                     eligendi aliquam quia natus sint! In, autem vel non ullam velit molestiae!
+                </p>
+                <br/>
+            </div> 
+
+            <div class="form">
+                <div>
+                    <p>
+                        Deixe seu contato.
+                    </p>
+                </div>
+
+                <form action="">
+                    <input type="text" placeholder="seu melhor email :)">
+                    <button> Enviar! </button>
+                </form>
+                
+            </div>
+        </section>
+        
+    </main>
+
+    
+    <script>
+        function displayAbout(){
+            var arrow = document.getElementById('animation');
+            arrow.classList.toggle('rotate');
+            var display = document.getElementById('about');
+            display.classList.toggle('active');
+            var display = document.getElementById('flex');
+            display.classList.toggle('active');
+        }
+    </script>
+</body>
+</html>
